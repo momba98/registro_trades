@@ -19,6 +19,8 @@ image_file = st.file_uploader("Upload An Image",type=['png','jpeg','jpg'])
 
 def save_uploadedfile(uploadedfile):
      with open(os.path.join("tempDir",uploadedfile.name),"wb") as f:
+         st.write(os.path.join("tempDir",uploadedfile.name))
+         st.write(os.getcwd())
          f.write(uploadedfile.getbuffer())
      return st.success("Saved File:{} to tempDir".format(uploadedfile.name))
 
