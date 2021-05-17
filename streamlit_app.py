@@ -25,4 +25,4 @@ def save_uploadedfile(uploadedfile):
 if image_file is not None:
     save_uploadedfile(image_file)
 
-    st.image(f'tempDIR/{image_file.name}',use_column_width=True)
+    st.image(f'tempDir/{image_file.name}',use_column_width=True)
