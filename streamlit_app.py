@@ -1,17 +1,6 @@
 import streamlit as st
-import pandas as pd
 from PIL import Image
-from datetime import datetime, timedelta
-import time
 import os
-import xlrd
-import numpy as np
-import io
-
-#incluir gráfico: selecione o ativo e veja seu desempenho no ranking ao longo do tempo
-#incluir customização: adicionar ou não o ranking definido por mim, que vai comparar
-#o desemepnho do ativo com o desempenho do ibov naquele ano. começar em 2015 e ir até 2020.
-#TROCAR O NOME DO REPO
 
 st.set_page_config(
     page_title='Teste Drive',
@@ -25,9 +14,6 @@ st.title("""
 Teste Drive
 
 """)
-
-
-st.title("Upload + Classification Example")
 
 image_file = st.file_uploader("Upload An Image",type=['png','jpeg','jpg'])
 
